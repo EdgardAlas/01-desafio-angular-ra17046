@@ -1,0 +1,34 @@
+.main {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.sections {
+  margin-inline: var(--container-padding-x);
+  gap: 2rem;
+  display: grid;
+  margin-inline: auto;
+  grid-template-areas:
+    "section1"
+    "section2"
+    "section3";
+
+  @media screen and (min-width: 768px) {
+    grid-template-areas:
+      "section1 section1 section2"
+      "section1 section1 section2"
+      "section3 section3 section3";
+  }
+
+  .section {
+    &1 {
+      grid-area: section1;
+    }
+    &2 {
+      grid-area: section2;
+    }
+    &3 {
+      grid-area: section3;
+    }
+  }
+}
