@@ -1,6 +1,7 @@
 .main {
   max-width: var(--max-width);
   margin-inline: auto;
+  padding-bottom: 2rem;
 }
 
 .sections {
@@ -17,6 +18,7 @@
     grid-template-areas:
       "section1 section1 section2"
       "section1 section1 section2"
+      "span span span"
       "section3 section3 section3";
   }
 

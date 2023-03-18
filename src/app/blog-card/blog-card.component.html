@@ -1,0 +1,8 @@
+<article class="blog-card">
+  <img [src]="card?.img" alt="" class="blog-card__img" />
+  <section class="blog-card__section">
+    <p class="blog-card__number">{{ card?.number | leadingZero }}</p>
+    <h3 class="blog-card__title">{{ card?.title }}</h3>
+    <p class="blog-card__text">{{ card?.text }}</p>
+  </section>
+</article>
