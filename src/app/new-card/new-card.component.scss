@@ -1,0 +1,28 @@
+.new-card {
+  display: grid;
+  gap: 1rem;
+
+  &__title {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--soft-orange);
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--grayish-blue);
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--grayish-blue);
+  margin: 1.5rem 0;
+}

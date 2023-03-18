@@ -1,12 +1,33 @@
 .second-section {
-  background-color: green;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  height: 100%;
+
   &__container {
     display: grid;
     @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
     }
   }
+
   &__title {
+    color: var(--soft-orange);
     font-size: 3rem;
+    margin: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    gap: 2rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
 }
